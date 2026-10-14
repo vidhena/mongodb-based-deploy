@@ -1,0 +1,219 @@
+/* ===== Global Reset ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e9e7ff, #f8f7ff, #dcecff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    color: #24243a;
+}
+
+/* ===== Main Container ===== */
+.container {
+    width: 100%;
+    max-width: 440px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 36px;
+    border-radius: 22px;
+    box-shadow: 0 18px 60px rgba(54, 49, 120, 0.12);
+}
+
+/* ===== Branding ===== */
+.brand {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.brand-icon {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6558e8;
+    color: white;
+    border-radius: 16px;
+    font-size: 28px;
+}
+
+.brand h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.brand p,
+.subtitle {
+    color: #77778c;
+    font-size: 14px;
+}
+
+/* ===== Login/Register Tabs ===== */
+.tabs {
+    display: flex;
+    background: #f0effb;
+    padding: 5px;
+    border-radius: 12px;
+    margin-bottom: 26px;
+}
+
+.tab {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    background: transparent;
+    color: #696982;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.tab.active {
+    background: #ffffff;
+    color: #6558e8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+/* ===== Form Headings ===== */
+form h2,
+#welcomeSection h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    margin-bottom: 24px;
+}
+
+/* ===== Input Fields ===== */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 17px 0 8px;
+}
+
+input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #dedee9;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    border-color: #6558e8;
+    box-shadow: 0 0 0 3px rgba(101, 88, 232, 0.12);
+}
+
+/* ===== Buttons ===== */
+.primary-btn {
+    width: 100%;
+    margin-top: 24px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #6558e8;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.primary-btn:hover {
+    background: #5144d0;
+}
+
+.primary-btn:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+/* ===== Hide Elements ===== */
+.hidden {
+    display: none !important;
+}
+
+/* ===== Messages ===== */
+.message {
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 9px;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.message.error {
+    background: #fff0f0;
+    color: #b42318;
+}
+
+.message.success {
+    background: #eaf9ef;
+    color: #16743a;
+}
+
+/* ===== Welcome Page ===== */
+#welcomeSection {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.success-icon {
+    width: 66px;
+    height: 66px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e4f8eb;
+    color: #16803d;
+    border-radius: 50%;
+    font-size: 34px;
+}
+
+#welcomeMessage {
+    margin-top: 12px;
+    color: #77778c;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    color: #9292a5;
+    font-size: 11px;
+    margin-top: 30px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 480px) {
+    body {
+        padding: 14px;
+    }
+
+    .card {
+        padding: 26px 22px;
+    }
+
+    .brand h1 {
+        font-size: 23px;
+    }
+}
