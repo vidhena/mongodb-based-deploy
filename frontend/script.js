@@ -1,6 +1,6 @@
 // Local backend URL.
 // Change this to your deployed Render backend URL later.
-const API_URL = "http://localhost:3000";
+const API_URL = "https://mongodb-based-deploy-1.onrender.com";
 
 const loginTab = document.getElementById("loginTab");
 const registerTab = document.getElementById("registerTab");
